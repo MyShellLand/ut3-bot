@@ -74,7 +74,7 @@ def won(g):
         return -1
     elif g.count('-') == 0:
         logging.debug(f'draw in board {g}')
-        return -.1
+        return -.01
 
 
 def children(g,player):
