@@ -3,7 +3,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-g = ['x','-','-','-','o','-','o','-','x']
+g = ['-','-','-','-','-','-','-','-','-']
 
 
 def best_move(g,player):

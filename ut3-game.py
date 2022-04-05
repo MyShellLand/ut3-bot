@@ -67,30 +67,10 @@ class UT3:
 
     # stuff under here is the minimax ai things
 
-    def legal_moves(self):
-        legal_moves = []
-        if self.s[int(self.last_move[1])-1] != '-':  # find all available squares if they send you to filled one
-            for sector in range(9):
-                for square in range(9):
-                    if (self.b[sector])[square] == '-':
-                        legal_moves.append([sector + 1, square + 1])
-        else:
-            for square in range(9):
-                if (self.b[int(self.last_move[1])-1])[square] == '-':
-                    legal_moves.append([self.last_move[1], square + 1])
-        return legal_moves
-
-    def stupid_eval(self,board):
-        9 + 10
-
-        # x is +, o is -
-
-    def minimax(self,depth,maximizingPlayer):
-        # should give eval as well as best move in position
-        9 + 10
 
 ut3 = UT3()
 
 while True:
     ut3.move()
-    print(ut3.legal_moves())
+    print(ut3.b)
+
